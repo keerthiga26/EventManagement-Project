@@ -1,0 +1,21 @@
+<!-- Header Section -->
+<header class="header">
+    <h1>Event Management Dashboard</h1>
+    <p>Manage your events, bookings, and payments seamlessly.</p>
+  </header>
+  
+  <!-- Card Section -->
+  <section class="dashboard-cards">
+    <div class="card" *ngFor="let card of cards">
+      <div class="card-icon">
+        <i class="{{ card.icon }}"></i>
+      </div>
+      <div class="card-details">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+      <div class="card-actions">
+        <button class="btn" (click)="navigateTo(card.routerLink)">View Details</button>
+      </div>
+    </div>
+  </section>

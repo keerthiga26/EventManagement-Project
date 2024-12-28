@@ -1,0 +1,32 @@
+<h2>Nammafunction</h2>
+   <div class="container">
+    <h2>List of Events</h2>
+  
+    <!-- Display loading message while events are being fetched -->
+    <div *ngIf="events.length === 0">
+      <p>No events available. Please check back later.</p>
+    </div>
+  
+    <!-- Display events in a table format -->
+    <table class="table" *ngIf="events.length > 0">
+      <thead>
+        <tr>
+          <th>Event Title</th>
+          <th>Event Type</th>
+          <th>Event Date</th>
+          <th>Price</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of events">
+          <td>{{ event.title }}</td>
+          <td>{{ event.eventType }}</td>
+          <td>{{ event.date | date }}</td>
+          <td>{{ event.price | currency:'INR' }}</td>
+          <td></td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>

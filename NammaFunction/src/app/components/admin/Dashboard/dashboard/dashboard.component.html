@@ -1,0 +1,57 @@
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/dashboard/home">NammaFunction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+          <div class="position-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" routerLink="/dashboard/home" routerLinkActive="active" aria-label="Home">
+                  <i class="bi bi-house-door"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard/user" routerLinkActive="active" aria-label="Users">
+                  <i class="bi bi-person"></i> Users
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard/showevents" aria-label="Events">
+                  <i class="bi bi-bar-chart"></i> Events
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard/booking" routerLinkActive="active" aria-label="Booking">
+                  <i class="bi bi-gear"></i> Booking
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/dashboard/payments" routerLinkActive="active" aria-label="Payments">
+                  <i class="bi bi-pie-chart"></i> Payments
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
+          <h1 class="h2">Admin Dashboard</h1>
+
+          <!-- Router Outlet for Dynamic Component Loading -->
+          <router-outlet></router-outlet>
+        </main>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,271 @@
+/* Video background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+header {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+header .nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header .nav li {
+    margin: 0 20px;
+}
+
+header .nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+header .nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .intro-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content .feature-list,
+.hero-content .service-list,
+.hero-content .how-it-works {
+    font-family: 'dancing Script', cursive; /* Apply the script font */
+    list-style-position: inside;
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-content .feature-list li,
+.hero-content .service-list li,
+.hero-content .how-it-works li {
+    margin-bottom: 20px;
+}
+
+.hero-content .call-to-action {
+    
+    font-family: 'dancing Script', cursive; /* Apply the script font */
+
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 40px;
+    width: 50%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+.logo {
+    font-family: 'dancing Script', cursive; /* Apply the script font */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffbd59;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adding a text shadow for better readability */
+    margin-left: 20px;
+}
+.logo2 {
+    font-family: 'Dancing Script', cursive; /* Apply the script font */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adding a text shadow for better readability */
+    margin-left: 20px;
+}
+.logo3 {
+    font-family: 'Dancing Script', cursive; /* Apply the script font */
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(28, 23, 23);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adding a text shadow for better readability */
+    margin-left: 20px;
+}
+/* Styling for the image section */
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.image-box {
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-description {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+
+
+/* Contact Us Section Styles */
+.contact-us {
+    background-color: #f8f8f8; /* Light background for the contact section */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-us .logo {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-us .contact-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-us .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us .contact-form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-us .contact-form input,
+.contact-us .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-us .contact-form input:focus,
+.contact-us .contact-form textarea:focus {
+    outline: none;
+    border-color: #4CAF50; /* Highlight the border color on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.contact-us .contact-form button {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us .contact-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.contact-us .contact-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .contact-us .contact-form {
+        padding: 15px;
+    }
+
+    .contact-us .contact-text {
+        font-size: 1em;
+    }
+
+    .contact-us .logo {
+        font-size: 2em;
+    }
+}
+

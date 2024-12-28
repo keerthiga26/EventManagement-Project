@@ -1,0 +1,31 @@
+<h2>Nammafunction</h2>
+   <div class="container">
+    <h2>List of Booking</h2>
+  
+    <!-- Display loading message while events are being fetched -->
+    <div *ngIf="bookings.length === 0">
+      <p>No events available. Please check back later.</p>
+    </div>
+  
+    <!-- Display events in a table format -->
+    <table class="table" *ngIf="bookings.length > 0">
+      <thead>
+        <tr>
+          <th>Booking Id</th>
+          <th>UserId</th>
+          <th>Status</th>
+          <th>Payment</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of bookings">
+          <td>{{ booking.id }}</td>
+          <td>{{ booking.userId }}</td>
+          <td> {{ booking.status }}</td>
+          <td>{{ booking.paymentId ? 'Paid' : 'Not Paid' }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,8 @@
+<h2>Nammafunction</h2>
+   <div class="container">
+    <h2>List of payments</h2>
+  
+    <!-- Display loading message while events are being fetched -->
+    <div *ngIf="payments.length === 0">
+      <p>No payments available. Please check back later.</p>
+    </div>

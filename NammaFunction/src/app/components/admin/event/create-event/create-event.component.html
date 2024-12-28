@@ -1,0 +1,139 @@
+<div class="container">
+    <!-- Button to toggle form -->
+    <button class="btn btn-primary" (click)="toggleForm()">
+      {{ isFormVisible ? 'Close Form' : 'Create Event' }}
+    </button>
+  
+    <!-- Form for creating event -->
+    <div *ngIf="isFormVisible" class="mt-3">
+      <h2>Create Event</h2>
+      <form (ngSubmit)="postEvent()" #eventForm="ngForm">
+  
+        <!-- Event Title -->
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            [(ngModel)]="event.title"
+            name="title"
+            required
+          />
+        </div>
+  
+        <!-- Description -->
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            class="form-control"
+            [(ngModel)]="event.description"
+            name="description"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+  
+        <!-- Event Type -->
+        <div class="form-group">
+          <label for="eventType">Event Type</label>
+          <select
+            id="eventType"
+            class="form-control"
+            [(ngModel)]="event.eventType"
+            name="eventType"
+            required
+          >
+            <option value="Wedding">Wedding</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Conference">Conference</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+  
+        <!-- Music System -->
+        <div class="form-group">
+          <label>
+            <input
+              type="checkbox"
+              [(ngModel)]="event.musicSystem"
+              name="musicSystem"
+            />
+            Include Music System
+          </label>
+        </div>
+  
+        <!-- Food Type -->
+        <div class="form-group">
+          <label for="foodType">Food Type</label>
+          <input
+            type="text"
+            id="foodType"
+            class="form-control"
+            [(ngModel)]="event.foodType"
+            name="foodType"
+            required
+          />
+        </div>
+  
+        <!-- Price -->
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input
+            type="number"
+            id="price"
+            class="form-control"
+            [(ngModel)]="event.price"
+            name="price"
+            required
+          />
+        </div>
+  
+        <!-- Date -->
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            class="form-control"
+            [(ngModel)]="event.date"
+            name="date"
+            required
+          />
+        </div>
+  
+        <!-- Backdrop -->
+        <div class="form-group">
+          <label for="backdrop">Backdrop</label>
+          <input
+            type="text"
+            id="backdrop"
+            class="form-control"
+            [(ngModel)]="event.backdrop"
+            name="backdrop"
+            required
+          />
+        </div>
+  
+        <!-- Image URL -->
+        <div class="form-group">
+          <label for="imageUrl">Image URL</label>
+          <input
+            type="text"
+            id="imageUrl"
+            class="form-control"
+            [(ngModel)]="event.imageUrl"
+            name="imageUrl"
+            required
+          />
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-success" [disabled]="!eventForm.form.valid">
+          Post Event
+        </button>
+      </form>
+    </div>
+  </div>
+

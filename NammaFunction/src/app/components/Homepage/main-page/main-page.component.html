@@ -1,0 +1,108 @@
+<div class="video-background">
+    <video autoplay loop muted id="video1.mp4">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<header class="header">
+    <div class="logo">Nammafunction</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="/homepage">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="/showevents">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="javascript:void(0)" (click)="openLoginModal()">Log In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="logo">Nammafunction</h1>
+        <p class="logo2">
+            Welcome to Namma Function Event Management! At Namma Function, we transform your dreams into reality. Whether it’s a wedding, corporate event, birthday celebration, or any special occasion, we ensure every detail is handled with care and precision, making your event unforgettable.
+        </p>
+
+        <h2 class="logo">Why Choose Us?</h2>
+        <ul class="feature-list">
+            <li>Personalized Experiences: Every event is unique. We design and execute events tailored to your vision.</li>
+            <li>Expert Team: With a passionate team of event planners, designers, and coordinators, we bring creativity and professionalism to the table.</li>
+            <li>Seamless Execution: Sit back and enjoy your special day while we manage everything from start to finish.</li>
+            <li>Cost-Effective Solutions: Premium services at budget-friendly prices.</li>
+        </ul>
+        <div class="image-section">
+            <div class="image-box">
+                <img src="image3.jpg" alt="Image 1">
+            </div>
+            <div class="image-box">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="image-box">
+                <img src="image8.jpg" alt="Image 3">
+            </div>
+        </div>
+        
+        <h2 class="logo">Our Services</h2>
+        <ul class="service-list">
+            <li>Weddings: From venue selection to décor and catering, we craft picture-perfect weddings.</li>
+            <li>Corporate Events: Conferences, team-building activities, product launches, and more.</li>
+            <li>Birthday Parties: Creative themes and activities for all age groups.</li>
+            <li>Cultural Events: Celebrate traditions with vibrant and elegant arrangements.</li>
+            <li>Custom Events: Have a unique idea? Let’s bring it to life!</li>
+        </ul>
+
+        <h2 class="logo">How It Works</h2>
+        <ol class="how-it-works">
+            <li>Consultation: Share your vision with our team.</li>
+            <li>Planning: We prepare a comprehensive plan tailored to your requirements.</li>
+            <li>Execution: Sit back and relax while we make your event extraordinary.</li>
+            <li>Celebrate: Enjoy your hassle-free, memorable event!</li>
+        </ol>
+
+        <h2 class="logo">Book Your Event Today!</h2>
+        <p class="logo2">
+            Your perfect event is just a call away. Let Namma Function Event Management create moments that matter.
+        </p>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="about-us">
+    <h2 class="logo">About Us</h2>
+    <p class="logo2">
+        At Namma Function, we believe that every event should tell a story and leave a lasting memory. We are a dedicated team of professionals passionate about creating unforgettable experiences. Our goal is to make your event seamless, beautiful, and exactly how you envision it. From weddings to corporate gatherings, we handle every aspect with creativity and precision.
+    </p>
+    <p class="logo2">
+        Our team is committed to making your special occasion extraordinary. With years of experience and attention to detail, we have built a reputation for delivering flawless events that exceed expectations. Trust us to turn your vision into reality, no matter the size or type of event.
+    </p>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-us">
+    <h2 class="logo">Contact Us</h2>
+    <p class="logo3">
+        Have questions or ready to plan your event? We’d love to hear from you! Reach out to us and let’s create something spectacular together.
+    </p>
+    <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</section>
+
+<!-- Login Modal -->
+<div class="modal" *ngIf="isLoginModalVisible">
+    <div class="modal-content">
+        <span class="close" (click)="closeLoginModal()">&times;</span>
+    </div>
+</div>
