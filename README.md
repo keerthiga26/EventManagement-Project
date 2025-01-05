@@ -61,8 +61,8 @@ The Event Management System is a web-based platform designed to help users explo
 ---
 
 ## Contact
-- Developer: ManiBharathy_k
-- Email: manibharthy363@gmail.com
+- Developer: Keerthiga D
+- Email: devkeerthi83@gmail.com
 
 
 ---
